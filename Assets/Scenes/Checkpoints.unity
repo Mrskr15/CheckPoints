@@ -309,7 +309,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 6
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -398,7 +398,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5224812, y: 2.261241, z: 3.5224817}
+  m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 0.6306204, z: 0}
 --- !u!23 &476923091
 MeshRenderer:
@@ -676,7 +676,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5224812, y: 2.261241, z: 3.5224817}
+  m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 0.6306204, z: 0}
 --- !u!23 &865554512
 MeshRenderer:
@@ -1364,7 +1364,7 @@ MonoBehaviour:
   cam: {fileID: 963194228}
   gravity: -14.2
   turnSmoothTime: 0.1
-  speed: 6
+  speed: 10
 --- !u!23 &1647472763
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1657,7 +1657,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 6
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -1791,7 +1791,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 6
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -1975,7 +1975,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5224812, y: 2.261241, z: 3.5224817}
+  m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 0.6306204, z: 0}
 --- !u!23 &2061525526
 MeshRenderer:
