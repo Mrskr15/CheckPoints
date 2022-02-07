@@ -312,7 +312,7 @@ GameObject:
   - component: {fileID: 445849200}
   m_Layer: 0
   m_Name: Checkpoint 3
-  m_TagString: checkpoint
+  m_TagString: Checkpoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -615,7 +615,7 @@ GameObject:
   - component: {fileID: 839730659}
   m_Layer: 0
   m_Name: Checkpoint 1
-  m_TagString: checkpoint
+  m_TagString: Checkpoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -920,15 +920,15 @@ RectTransform:
   m_GameObject: {fileID: 985809332}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.45929, y: 0.45929, z: 0.45929}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 948839355}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 11, y: -305}
-  m_SizeDelta: {x: 707.41, y: 168.1}
+  m_AnchoredPosition: {x: 0, y: -300}
+  m_SizeDelta: {x: 600, y: 150}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &985809334
 MonoBehaviour:
@@ -951,12 +951,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 85
-    m_FontStyle: 0
+    m_Font: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
+    m_FontSize: 40
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 2
-    m_MaxSize: 127
+    m_MaxSize: 187
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -1067,7 +1067,7 @@ GameObject:
   - component: {fileID: 1214169113}
   m_Layer: 0
   m_Name: Checkpoint 2
-  m_TagString: checkpoint
+  m_TagString: Checkpoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1424,7 +1424,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1647472761}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -3.7}
+  m_LocalPosition: {x: 0, y: 1, z: -4.77}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2058308376}
