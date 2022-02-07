@@ -5,13 +5,12 @@ using UnityEngine;
 public class PositionSave : MonoBehaviour
 {
     public float posX;
-    public float posY=1f;
+    public float posY = 1f;
     public float posZ;
 
     public string checkpoint;
 
-    public Vector3 Posicion;
-
+    public Vector3 Position;
 
     // Start is called before the first frame update
     void Start()
@@ -27,27 +26,24 @@ public class PositionSave : MonoBehaviour
 
     public void GuardarPos()
     {
-       PlayerPrefs.SetFloat("PosicionX", transform.position.x);
-       PlayerPrefs.SetFloat("PosicionY", transform.position.y);
-       PlayerPrefs.SetFloat("PosicionZ", transform.position.z);
-
-
+       PlayerPrefs.SetFloat("PositionX", transform.position.x);
+       PlayerPrefs.SetFloat("PositionY", transform.position.y);
+       PlayerPrefs.SetFloat("PositionZ", transform.position.z);
     }
 
     public void CargarPos()
     {
-       posX = PlayerPrefs.GetFloat("PosicionX");
-       posY = PlayerPrefs.GetFloat("PosicionY");
-       posZ = PlayerPrefs.GetFloat("PosicionZ");
+       posX = PlayerPrefs.GetFloat("PositionX");
+       posY = PlayerPrefs.GetFloat("PositionY");
+       posZ = PlayerPrefs.GetFloat("PositionZ");
 
-       Posicion.x = posX;
-       Posicion.y = posY;
-       Posicion.z = posZ;
+       Position.x = posX;
+       Position.y = posY;
+       Position.z = posZ;
 
-       transform.position = Posicion;
+       transform.position = Position;
 
-        checkpoint = PlayerPrefs.GetString("Collider");
-
+       checkpoint = PlayerPrefs.GetString("Collider");
     }
 
     private void OnTriggerEnter(Collider other) 
@@ -56,7 +52,6 @@ public class PositionSave : MonoBehaviour
         {
            PlayerPrefs.SetString("Collider", other.gameObject.name);
            GuardarPos();
-           //Debug.Log("DatosGuardados");
         }
     }
 }
