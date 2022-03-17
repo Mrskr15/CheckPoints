@@ -15,24 +15,6 @@ public class PositionSave : MonoBehaviour
    // Start is called before the first frame update
    void Start()
    {
-      LoadPosition();
-   }
-
-   // Update is called once per frame
-   void Update()
-   {
-      checkpoint = PlayerPrefs.GetString("Collider");
-   }
-
-   public void SavePosition()
-   {
-      PlayerPrefs.SetFloat("PositionX", transform.position.x);
-      PlayerPrefs.SetFloat("PositionY", transform.position.y);
-      PlayerPrefs.SetFloat("PositionZ", transform.position.z);
-   }
-
-   public void LoadPosition()
-   {
       posX = PlayerPrefs.GetFloat("PositionX");
       posY = PlayerPrefs.GetFloat("PositionY");
       posZ = PlayerPrefs.GetFloat("PositionZ");
@@ -46,12 +28,21 @@ public class PositionSave : MonoBehaviour
       checkpoint = PlayerPrefs.GetString("Collider");
    }
 
+   // Update is called once per frame
+   void Update()
+   {
+      checkpoint = PlayerPrefs.GetString("Collider");
+   }
+
    private void OnTriggerEnter(Collider other) 
    {
       if(other.tag == "Checkpoint")
       {
          PlayerPrefs.SetString("Collider", other.gameObject.name);
-         SavePosition();
+         
+         PlayerPrefs.SetFloat("PositionX", transform.position.x);
+         PlayerPrefs.SetFloat("PositionY", transform.position.y);
+         PlayerPrefs.SetFloat("PositionZ", transform.position.z);
       }
    }
 }
