@@ -15,11 +15,6 @@ public class PlayerController : MonoBehaviour
 
     public float speed = 6f;
    
-    void Start()
-    {
-
-    }
-
     void Update()
     {
         float horizontal = Input.GetAxisRaw("Horizontal");
